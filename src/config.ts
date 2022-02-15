@@ -1,6 +1,6 @@
 export const SITE = {
   title: 'Devs Docs',
-  description: 'Your website description.',
+  description: 'Comparative Literature: JavaScript, Python, and Rust',
   defaultLanguage: 'en_US'
 };
 
@@ -34,12 +34,21 @@ export const KNOWN_LANGUAGES = {
 export const SIDEBAR = {
   en: [
     { text: '', header: true },
-    { text: 'Section Header', header: true },
+    { text: 'Programming Language', header: true },
     { text: 'Introduction', link: 'en/introduction' },
-    { text: 'Page 2', link: 'en/page-2' },
-    { text: 'Page 3', link: 'en/page-3' },
+    { text: 'Javascript/Typescript', link: 'en/javascript' },
+    { text: 'Python', link: 'en/python' },
+    { text: 'Rust', link: 'en/rust' },
 
-    { text: 'Another Section', header: true },
-    { text: 'Page 4', link: 'en/page-4' }
+    { text: 'Comparative Analysis', header: true },
+    { text: 'Syntax', link: 'en/syntax' },
+    { text: 'Common Cases', link: 'en/cases' },
+    { text: 'Similarities', link: 'en/similar' },
+    { text: 'Differences', link: 'en/difference' },
+
+    { text: 'Reference', header: true },
+    { text: 'Javascript', link: 'en/jsref' },
+    { text: 'Python', link: 'en/pyref' },
+    { text: 'Rust', link: 'en/rsref' }
   ]
 };

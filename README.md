@@ -1,7 +1,7 @@
 # Devs-Docs 😉
 
 - Organization --> productivity
-- Documentation is the key success! 👍
+- Documentation is the key to success! 👍
 
 ## Features
 
