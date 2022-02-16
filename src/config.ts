@@ -26,11 +26,11 @@ export const KNOWN_LANGUAGES = {
 
 // Uncomment this to enable site search.
 // See "Algolia" section of the README for more information.
-export const ALGOLIA = {
-  algolia_app: import.meta.env.PUBLIC_ALGOLIA_APP_ID,
-  algolia_api: import.meta.env.PUBLIC_ALGOLIA_API_KEY,
-  algolia_index: import.meta.env.PUBLIC_ALGOLIA_INDEX // search only API key, not admin API key
-};
+// export const ALGOLIA = {
+//   algolia_app: import.meta.env.PUBLIC_ALGOLIA_APP_ID,
+//   algolia_api: import.meta.env.PUBLIC_ALGOLIA_API_KEY,
+//   algolia_index: import.meta.env.PUBLIC_ALGOLIA_INDEX // search only API key, not admin API key
+// };
 
 export const SIDEBAR = {
   en: [

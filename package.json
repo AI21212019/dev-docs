@@ -9,8 +9,9 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@docsearch/react": "^1.0.0-alpha.28",
-    "algoliasearch": "^4.12.1"
+    "@docsearch/react": "^3.0.0-alpha.50",
+    "algoliasearch": "^4.12.1",
+    "react-instantsearch-dom": "^6.22.0"
   },
   "devDependencies": {
     "@astrojs/renderer-preact": "^0.4.0",
