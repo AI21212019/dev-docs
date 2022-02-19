@@ -15,7 +15,8 @@ export const OPEN_GRAPH = {
 };
 
 export const KNOWN_LANGUAGES = {
-  English: 'en'
+  English: 'en',
+  Español: 'es'
 };
 
 // Uncomment this to add an "Edit this page" button to every page of documentation.
@@ -51,5 +52,35 @@ export const SIDEBAR = {
     { text: 'Javascript', link: 'en/jsref' },
     { text: 'Python', link: 'en/pyref' },
     { text: 'Rust', link: 'en/rsref' }
-  ]
+  ],
+  es: [{}, {}]
 };
+
+// You can pass variables to the serverSide using custom Vite configuration.
+
+// import dotenv from "dotenv"
+// import fs from "fs/promises"
+
+// const env = dotenv.parse(await fs.readFile(".env"))
+
+// export default ({
+//   vite: {
+//     define: {
+//       "process.env.DIRECTUS_URL": `"${env.DIRECTUS_URL}"`,
+//       "process.env.DIRECTUS_ACCESS_TOKEN": `"${env.DIRECTUS_ACCESS_TOKEN}"`,
+//     }
+//   },
+// })
+// Then inside the app:
+
+// import { Directus } from "@directus/sdk"
+// import { Collections } from "./models"
+
+// // Get Directus client
+// export async function getDirectus() {
+//   const directus = new Directus<Collections>(process.env.DIRECTUS_URL!)
+//   await directus.auth.static(process.env.DIRECTUS_ACCESS_TOKEN!)
+
+//   return directus
+// }
+// Just be sure to use it only in server-side code.

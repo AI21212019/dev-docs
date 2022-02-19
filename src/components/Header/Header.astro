@@ -17,19 +17,15 @@ const lang = currentPage && getLanguageFromURL(currentPage);
 		<div class="menu-toggle">
 			<SidebarToggle client:idle />
 		</div>
-		<div class="logo flex">
+		<div class="logo">
 			<AstroLogo size={40} />
 			<a href="/">
 				<h1>{CONFIG.SITE.title ?? "Documentation"}</h1>
 			</a>
 		</div>
 		<div style="flex-grow: 1;"></div>
-		{KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
-		{CONFIG.ALGOLIA && (
-			<div class="search-item">
-				<Search client:idle />
-			</div>
-		)}
+		<LanguageSelect lang={lang} />
+		<Search  />
 	</nav>
 </header>
 
