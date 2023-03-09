@@ -1,6 +1,6 @@
 ---
-import { getLanguageFromURL } from '../../languages.ts';
-import { SIDEBAR } from '../../config.ts';
+import { getLanguageFromURL } from '../../languages';
+import { SIDEBAR } from '../../config';
 const { currentPage } = Astro.props;
 const currentPageMatch = currentPage.slice(1);
 const langCode = getLanguageFromURL(currentPage);
@@ -47,8 +47,10 @@ const sidebarSections = SIDEBAR[langCode].reduce((col, item, i) => {
 	window.addEventListener('DOMContentLoaded', (event) => {
 		var target = document.querySelector('[aria-current="page"]');
 		if (target && target.offsetTop > window.innerHeight - 100) {
-			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+			if (document.querySelector('.nav-groups')) {
+				document.querySelector('.nav-groups').scrollTop = target.offsetTop;
 		}
+	}
 	});
 </script>
 

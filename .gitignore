@@ -21,3 +21,5 @@ yarn-error.log*
 .stackblitzrc
 
 sandbox.config.json
+
+..env.local.icloud
